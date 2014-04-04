@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 
 Project("{CDDABB44-55AA-0D28-2F32-534872834212}") = "LostGame", "Assembly-CSharp-firstpass-vs.csproj", "{40DCED0E-1659-9B6C-B976-167A3E42AE4F}"
 EndProject
+Project("{CDDABB44-55AA-0D28-2F32-534872834212}") = "LostGame", "Assembly-CSharp-Editor-firstpass-vs.csproj", "{C71278F5-9F18-0FBC-43AD-C03348CB4716}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,15 +15,30 @@ Global
 		{40DCED0E-1659-9B6C-B976-167A3E42AE4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40DCED0E-1659-9B6C-B976-167A3E42AE4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40DCED0E-1659-9B6C-B976-167A3E42AE4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C71278F5-9F18-0FBC-43AD-C03348CB4716}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C71278F5-9F18-0FBC-43AD-C03348CB4716}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C71278F5-9F18-0FBC-43AD-C03348CB4716}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C71278F5-9F18-0FBC-43AD-C03348CB4716}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
+<<<<<<< HEAD
 																									GlobalSection(MonoDevelopProperties) = preSolution
+=======
+																											GlobalSection(MonoDevelopProperties) = preSolution
+=======
+<<<<<<< HEAD
+																							GlobalSection(MonoDevelopProperties) = preSolution
+>>>>>>> FETCH_HEAD
 =======
 															GlobalSection(MonoDevelopProperties) = preSolution
 =======
 																					GlobalSection(MonoDevelopProperties) = preSolution
+>>>>>>> FETCH_HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> FETCH_HEAD
 >>>>>>> FETCH_HEAD
 =======
 															GlobalSection(MonoDevelopProperties) = preSolution
