@@ -23,7 +23,7 @@ class Boundary
 	var max : Vector2 = Vector2.zero;
 }
 
-static private var joysticks : Joystick[];					// A static collection of all joysticks
+static private var joysticks : JoystickDB[];					// A static collection of all joysticks
 static private var enumeratedJoysticks : boolean = false;
 static private var tapTimeDelta : float = 0.3;				// Time allowed between taps
 
@@ -33,6 +33,9 @@ var deadZone : Vector2 = Vector2.zero;						// Control when position is output
 var normalize : boolean = false; 							// Normalize output after the dead-zone?
 var position : Vector2; 									// [-1, 1] in x,y
 var tapCount : int;											// Current tap count
+var inputX : InputItem;										// Input item to modify
+var inputY : InputItem;										// Input item to modify
+var sensitivity : float = 1;
 
 private var lastFingerId = -1;								// Finger last used for this joystick
 private var tapTimeWindow : float;							// How much time there is left for a tap to occur
@@ -87,7 +90,7 @@ function Start()
 
 function Disable()
 {
-	gameObject.active = false;
+	gameObject.SetActive(false);
 	enumeratedJoysticks = false;
 }
 
@@ -120,7 +123,7 @@ function Update()
 	if ( !enumeratedJoysticks )
 	{
 		// Collect all joysticks in the game, so we can relay finger latching messages
-		joysticks = FindObjectsOfType( Joystick ) as Joystick[];
+		joysticks = FindObjectsOfType( JoystickDB ) as JoystickDB[];
 		enumeratedJoysticks = true;
 	}	
 		
@@ -177,7 +180,7 @@ function Update()
 				}
 											
 				// Tell other joysticks we've latched this finger
-				for ( var j : Joystick in joysticks )
+				for ( var j : JoystickDB in joysticks )
 				{
 					if ( j != this )
 						j.LatchedFinger( touch.fingerId );
@@ -243,4 +246,6 @@ function Update()
 		// Rescale the output after taking the dead zone into account
 		position.y = Mathf.Sign( position.y ) * ( absoluteY - deadZone.y ) / ( 1 - deadZone.y );
 	}
+	inputX.axis = position.x*sensitivity;
+	inputY.axis = position.y*sensitivity;
 }
