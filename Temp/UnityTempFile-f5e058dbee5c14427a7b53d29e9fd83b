@@ -5,7 +5,7 @@
 -nowarn:BCW0016
 -nowarn:BCW0003
 -method:Main
--out:Temp/Assembly-UnityScript.dll
+-out:Temp/Assembly-UnityScript-firstpass.dll
 -x-type-inference-rule-attribute:UnityEngineInternal.TypeInferenceRuleAttribute
 -debug
 -define:UNITY_STANDALONE_OSX
@@ -40,20 +40,16 @@
 -define:ENABLE_PROFILER
 -define:UNITY_EDITOR
 -define:UNITY_EDITOR_OSX
--r:'/Applications/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll'
--r:'Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll'
--r:'Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll'
--r:'/Applications/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll'
+-r:'/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll'
+-r:'/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll'
 -i:UnityEditor
-'Assets/Standard Assets (Mobile)/Scripts/CameraRelativeControl.js'
-'Assets/Standard Assets (Mobile)/Scripts/FirstPersonControl.js'
-'Assets/Standard Assets (Mobile)/Scripts/FollowTransform.js'
-'Assets/Standard Assets (Mobile)/Scripts/Joystick.js'
-'Assets/Standard Assets (Mobile)/Scripts/ObliqueNear.js'
-'Assets/Standard Assets (Mobile)/Scripts/PlayerRelativeControl.js'
-'Assets/Standard Assets (Mobile)/Scripts/RollABall.js'
-'Assets/Standard Assets (Mobile)/Scripts/RotationConstraint.js'
-'Assets/Standard Assets (Mobile)/Scripts/SidescrollControl.js'
-'Assets/Standard Assets (Mobile)/Scripts/SmoothFollow2D.js'
-'Assets/Standard Assets (Mobile)/Scripts/ZoomCamera.js'
-'Assets/Standard Assets (Mobile)/Scripts/tapcontrol.js'
+'Assets/Standard Assets/Character Controllers/Sources/Scripts/CharacterMotor.js'
+'Assets/Standard Assets/Character Controllers/Sources/Scripts/FPSInputController.js'
+'Assets/Standard Assets/Character Controllers/Sources/Scripts/PlatformInputController.js'
+'Assets/Standard Assets/Character Controllers/Sources/Scripts/ThirdPersonCamera.js'
+'Assets/Standard Assets/Character Controllers/Sources/Scripts/ThirdPersonController.js'
+'Assets/Standard Assets/Particles/Legacy Particles/TimedObjectDestructor.js'
+'Assets/Standard Assets/Scripts/Camera Scripts/MouseOrbit.js'
+'Assets/Standard Assets/Scripts/Camera Scripts/SmoothFollow.js'
+'Assets/Standard Assets/Scripts/Camera Scripts/SmoothLookAt.js'
+'Assets/Standard Assets/Scripts/General Scripts/DragRigidbody.js'

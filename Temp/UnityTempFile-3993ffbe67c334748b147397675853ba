@@ -40,8 +40,8 @@
 -define:ENABLE_PROFILER
 -define:UNITY_EDITOR
 -define:UNITY_EDITOR_OSX
--r:'/Applications/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll'
--r:'/Applications/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll'
+-r:'/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll'
+-r:'/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll'
 -i:UnityEditor
 'Assets/Plugins/DB Upgrades_Store/Store/Scripts/DBStoreController.js'
 'Assets/Plugins/DB Upgrades_Store/Store/Scripts/DBStoreGUI.js'
