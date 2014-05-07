@@ -14,4 +14,5 @@ function MoveObject (thisTransform : Transform, startPos : Vector3, endPos : Vec
 		transform.Rotate(Vector3.down * Time.deltaTime * 3);
         yield; 
     }
+	gameObject.AddComponent ("MouseLook");
 }
