@@ -4,3 +4,5 @@ CURRENTLY WORKING ON:
 - Made a rough rectangular island with some trees and grass (Jeremy)
 
 - Made a island based on a image of a map of the island. The island features many terrain changes (mountains, valleys, plains) and will have grasses and trees added to it in the future. The map texture currently on the island will be replaced with more realistic and good looking textures painted on. There is currently a plane model on the island, made to look like it crashed, where the main crash spot was identified on the map. I looked for a model that looked "crashed"/destroyed, but could not find a good one that was free. (Nathaniel)
+
+Changed the working.txt to test something.
